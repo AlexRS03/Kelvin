@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelvin</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+
+
+    <!-- SPRITE -->
+    <svg style="display: none;">
+
+        <symbol id="twitter" viewBox="0 0 310 310">
+            <g>
+                <path d="M302.973,57.388c-4.87,2.16-9.877,3.983-14.993,5.463c6.057-6.85,10.675-14.91,13.494-23.73
+                    c0.632-1.977-0.023-4.141-1.648-5.434c-1.623-1.294-3.878-1.449-5.665-0.39c-10.865,6.444-22.587,11.075-34.878,13.783
+                    c-12.381-12.098-29.197-18.983-46.581-18.983c-36.695,0-66.549,29.853-66.549,66.547c0,2.89,0.183,5.764,0.545,8.598
+                    C101.163,99.244,58.83,76.863,29.76,41.204c-1.036-1.271-2.632-1.956-4.266-1.825c-1.635,0.128-3.104,1.05-3.93,2.467
+                    c-5.896,10.117-9.013,21.688-9.013,33.461c0,16.035,5.725,31.249,15.838,43.137c-3.075-1.065-6.059-2.396-8.907-3.977
+                    c-1.529-0.851-3.395-0.838-4.914,0.033c-1.52,0.871-2.473,2.473-2.513,4.224c-0.007,0.295-0.007,0.59-0.007,0.889
+                    c0,23.935,12.882,45.484,32.577,57.229c-1.692-0.169-3.383-0.414-5.063-0.735c-1.732-0.331-3.513,0.276-4.681,1.597
+                    c-1.17,1.32-1.557,3.16-1.018,4.84c7.29,22.76,26.059,39.501,48.749,44.605c-18.819,11.787-40.34,17.961-62.932,17.961
+                    c-4.714,0-9.455-0.277-14.095-0.826c-2.305-0.274-4.509,1.087-5.294,3.279c-0.785,2.193,0.047,4.638,2.008,5.895
+                    c29.023,18.609,62.582,28.445,97.047,28.445c67.754,0,110.139-31.95,133.764-58.753c29.46-33.421,46.356-77.658,46.356-121.367
+                    c0-1.826-0.028-3.67-0.084-5.508c11.623-8.757,21.63-19.355,29.773-31.536c1.237-1.85,1.103-4.295-0.33-5.998
+                    C307.394,57.037,305.009,56.486,302.973,57.388z"/>
+            </g>
+        </symbol>
+
+        <symbol id="instagram" viewBox="0 0 511 511.9">
+            <g>
+                <path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"/><path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"/><path d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"/>
+            </g>
+        </symbol>
+
+        <symbol id="facebook" viewBox="0 0 24 24">
+            <g>
+                <path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/>
+            </g>
+        </symbol>
+
+        <symbol id="linkedin" viewBox="0 0 24 24">
+            <g>
+                <path d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"/><path d="m.396 7.977h4.976v16.023h-4.976z"/><path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"/>
+            </g>
+        </symbol>
+
+    </svg>
+
+
+    <!--HEADER-->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="#">
+                    <img src="img/logo.png" alt="">
+                </a>
+
+                <nav class="nav" id="nav">
+                    <a class="nav__link" href="#">Home</a>
+                    <a class="nav__link" href="#" data-scroll="#works">Works</a>
+                    <a class="nav__link" href="#" data-scroll="#services">Services</a>
+                    <a class="nav__link" href="#" data-scroll="#intro">About</a>
+                    <a class="nav__link" href="#" data-scroll="#contact">Contact</a>
+                </nav>
+
+                <button class="burger" type="button" id="navToggle">
+                    <span class="burger__item">Menu</span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <!--INTRO-->
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__title">Kelvin Kramer Design & Developer</div>
+                <div class="intro__text">I’m a portrait, fashion and lifestyle photographer living In New York City. During my thirteen year tenure here.</div>
+            </div>
+        </div>
+    </div>
+
+    <!--SERVICES-->
+    <div class="container" id="services">
+        <div class="services">
+
+            <div class="services__item">
+                <img src="img/services/ui-ux.png" alt="" class="services__icon">
+                <h4 class="services__title">UI / UX Design</h4>
+                <div class="services__text">Our design is translated into comprehensive digital environments built on latest development standards.</div>
+            </div>
+
+            <div class="services__item">
+                <img src="img/services/development.png" alt="" class="services__icon">
+                <h4 class="services__title">Development</h4>
+                <div class="services__text">Our design is translated into comprehensive digital environments built on latest development standards.</div>
+            </div>
+
+            <div class="services__item">
+                <img src="img/services/software.png" alt="" class="services__icon">
+                <h4 class="services__title">Software Testing</h4>
+                <div class="services__text">Our design is translated into comprehensive digital environments built on latest development standards.</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--FEATURES-->
+    <div class="features" id="features">
+        <div class="container">
+
+            <div class="features__content">
+                <div class="features__title">I Know You Need <span>Perfect.</span></div>
+
+                <div class="features__subtitle">Quality Every Time</div>
+                <div class="features__text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece</div>
+
+                <div class="features__subtitle">Invovative For Your Business</div>
+                <div class="features__text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece</div>
+
+                <div class="features__subtitle">Save Your Times</div>
+                <div class="features__text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece</div>
+            </div>
+
+            <div class="features__photo">
+                <img class="feature__img--big" src="img/features/features-big.jpg" alt="">
+                <img class="feature__img--right" src="img/features/features-small-first.jpg" alt="">
+                <img class="feature__img--bottom" src="img/features/features-small-second.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--WORKS-->
+    <div class="works" id="works">
+
+        <div class="works__item">
+            <img class="works__photo" src="img/work/work-1.jpg" alt="">
+            <div class="works__content">
+                <div class="works__title">Project Name</div>
+            </div>
+        </div>
+
+        <div class="works__item">
+            <img class="works__photo" src="img/work/work-2.jpg" alt="">
+            <div class="works__content">
+                <div class="works__title">Project Name</div>
+            </div>
+        </div>
+
+        <div class="works__item">
+            <img class="works__photo" src="img/work/work-3.jpg" alt="">
+            <div class="works__content">
+                <div class="works__title">Project Name</div>
+            </div>
+        </div>
+
+        <div class="works__item">
+            <img class="works__photo" src="img/work/work-4.jpg" alt="">
+            <div class="works__content">
+                <div class="works__title">Project Name</div>
+            </div>
+        </div>
+
+        <div class="works__item">
+            <img class="works__photo" src="img/work/work-5.jpg" alt="">
+            <div class="works__content">
+                <div class="works__title">Project Name</div>
+            </div>
+        </div>
+
+        <div class="works__item">
+            <img class="works__photo" src="img/work/work-6.jpg" alt="">
+            <div class="works__content">
+                <div class="works__title">Project Name</div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--TESTIMONIALS-->
+    <div class="reviews">
+        <div class="container container__reviews">
+
+            <div class="reviews__inner">
+                <div class="reviews__title">Testimonials.</div>
+                <div class="reviews__rating">
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span></span>
+                </div>
+                <div class="reviews__text">
+                    Great template! Very fast and easy to configure. Intuitive interface, didn't even have to read the documentation. There were several questions that the author answered quickly. For customization themes no need to edit css.
+                </div>
+                <div class="reviews__photo">
+                    <img src="img/Ellipse-1.png" alt="">
+                </div>
+                <div class="reviews__author">Svetlin Denkov</div>
+                <div class="reviews__prof">Senior Desinger</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--PARTNERS-->
+    <div class="partners">
+        <div class="container">
+            <div class="partners__item">
+                <img class="partner__logo" src="img/partners/partner_1.png" alt="">
+                <img class="partner__logo" src="img/partners/partner_2.png" alt="">
+                <img class="partner__logo" src="img/partners/partner_3.png" alt="">
+                <img class="partner__logo" src="img/partners/partner_4.png" alt="">
+                <img class="partner__logo" src="img/partners/partner_5.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--FORMS-->
+    <div class="forms" id="contact">
+        <div class="container">
+
+            <div class="forms__inner">
+                <div class="forms__title">Tell Me what you need?</div>
+                <div class="forms__phone">My phone number is <a href="tel:+46475147">+46 475147</a> </div>
+                <div class="forms__text">Alternatively, please send me a message using the contact form and I’ll get back to you.</div>
+            </div>
+
+            <div class="form">
+                <form action="#" id="form" class="form__inner">
+
+                    <div class="form__item">
+                        <label for="formName" class="form__label"></label>
+                        <input type="text" id="formName" name="name" class="form__input" placeholder="Your Name*">
+                    </div>
+
+                    <div class="form__item">
+                        <label for="formEmail" class="form__label"></label>
+                        <input type="text" id="formEmail" name="email" class="form__input" placeholder="Your Email*">
+                    </div>
+
+                    <div class="form__item">
+                        <label for="formPhone" class="form__label"></label>
+                        <input type="tel" id="formPhone" name="phone" class="form__input" placeholder="Your Phone">
+                    </div>
+
+                    <div class="form__message">
+                        <label for="formMessage" class="form__label"></label>
+                        <textarea name="message" id="formMessage" placeholder="Message" class="message__textarea"></textarea>
+                    </div>
+
+                    <button type="submit" class="form__btn">Send Message</button>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!--COPYRIGHT-->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer__inner">
+                <div class="footer__text">© Copyright Jenn Pereira 2020. All Rights Reserved.</div>
+
+                <div class="footer__socials">
+
+                    <div class="social">
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div><!--Container-->
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
